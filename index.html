@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangadi - Portfolio & Product</title>
+    <title>Mangadi - Portofolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,11 @@
 <body>
     <header>
         <nav class="container">
-            <a href="https://mangadi-167.github.io/portofolio-mangadi/" class="logo">Mangadi</a>
+            <a href="https://mangadi-167.github.io/portofolio-mangadi/" class="logo">Website Portofolio</a>
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#affiliate">Product</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="https://mangadi-167.github.io/portofolio-mangadi/">Social Media</a></li>
             </ul>
@@ -26,15 +26,23 @@
     </header>
 
     <main>
+        <!-- Updated Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                <h1>Hi, I'm Mangadi</h1>
-                <p>Web Developer & Content creator.</p>
-                <p>Welcome to my digital portfolio website. Here you can see my programming skills and recommendations
-                    for the best smartphone products.</p>
-                <a href="#affiliate" class="cta-button">Product Gadget</a>
+            <div class="container hero-container">
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder image, please replace with your actual profile picture -->
+                    
+                    <img src="images/profile/mangadi.JPG" alt="Mangadi Profile Picture" class="profile-picture" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cccccc/333333?text=Profile';">
+                </div>
+                <div class="hero-content">
+                    <h1>Hi, I'm Mangadi</h1>
+                    <p class="tagline">Web Developer & UI/UX</p>
+                    <p class="description">Welcome to my digital portfolio. Here you can see my programming skills and some of my latest projects.</p>
+                    <a href="#projects" class="cta-button">My Projects</a>
+                </div>
             </div>
         </section>
+        <!-- End Updated Hero Section -->
 
         <section id="skills" class="skills-section">
             <div class="container">
@@ -128,54 +136,40 @@
             </div>
         </section>
 
-        <section id="affiliate" class="affiliate-section">
+        <!-- Bagian ini sudah diubah menjadi My Projects -->
+        <section id="projects" class="projects-section">
             <div class="container">
-                <h2>Product Smartphone</h2>
-                <p class="affiliate-disclaimer">
-                    This is a great smartphone product for you to buy this year. Because it has great specifications for
-                    gaming and camera.
+                <h2>My Projects</h2>
+                <p class="projects-description">
+                    Here are some projects I've worked on. Click on a card to see more details.
                 </p>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <img src="images/iphone16.png" alt="">
-                        <h3>iPhone 16</h3>
-                        <p>Flagship camera and powerful performance for gaming and productivity. Stunning AMOLED
-                            display.</p>
-                        <p class="price">Estimated Price: IDR 14,000,000</p>
-                        <a href="https://s.shopee.co.id/7ph9U2hauS" target="_blank" class="affiliate-button">Buy at
-                            Official
-                            Store</a>
-                        <a href="https://s.shopee.co.id/7ph9U2hauS" target="_blank" class="review-button">Read My
-                            Review</a>
+                <div class="projects-grid">
+                    
+                    <!-- Card untuk Proyek 1: Tanah Lot -->
+                    <div class="project-card">
+                        <a href="projects/tanahlot.html">
+                            <img src="images/website/tanahlot/1.WebP" alt="Tanah Lot Project Cover Image">
+                            <div class="project-card-content">
+                                <h3>AI Chatbot-Based Tanah Lot Site</h3>
+                                <p>Tanah Lot tourist website featuring an AI chat bot. Online ticket purchases are available using the Python programming language.
+                                </p>
+                                <span class="view-project-button">View Projects</span>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="product-card">
-                        <img src="images/SamsungS25Ultra.png" alt="">
-                        <h3>Samsung S25 Ultra</h3>
-                        <p>Flagship camera and powerful performance for gaming and productivity. Stunning AMOLED
-                            display.</p>
-                        <p class="price">Estimated Price: IDR 22,000,000</p>
-                        <a href="https://s.shopee.co.id/1g6W9JY7al" target="_blank" class="affiliate-button">Buy at
-                            Official
-                            Store</a>
-                        <a href="https://s.shopee.co.id/1g6W9JY7al" target="_blank" class="review-button">Read My
-                            Review</a>
+                    <!-- Card untuk Proyek 2: Gymspot -->
+                    <div class="project-card">
+                        <a href="projects/gymspot.html">
+                            <img src="images/website/gymspot/1.WebP" alt="Gymspot Project Cover Image">
+                            <div class="project-card-content">
+                                <h3>Website GYM Spot</h3>
+                                <p>The GYM Spot website is a platform for finding fitness centers based on location, viewing details, pricing, and trainers. It uses the PHP programming language.
+                                </p>
+                                <span class="view-project-button">View Projects</span>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="product-card">
-                        <img src="images/vivox200pro.png" alt="">
-                        <h3>Vivo X200 Pro</h3>
-                        <p>Flagship camera and powerful performance for gaming and productivity. Stunning AMOLED
-                            display.</p>
-                        <p class="price">Estimated Price: IDR 18,000,000</p>
-                        <a href="https://s.shopee.co.id/7Kkstt0Bur" target="_blank" class="affiliate-button">Buy at
-                            Official
-                            Store</a>
-                        <a href="https://s.shopee.co.id/7Kkstt0Bur" target="_blank" class="review-button">Read My
-                            Review</a>
-                    </div>
-
-
 
                 </div>
             </div>
@@ -195,7 +189,11 @@
             <p>&copy; <span id="year"></span> Mangadi. All Rights Reserved.</p>
         </div>
     </footer>
-
+    
+    <script>
+        // Mengatur tahun saat ini di footer
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
 </body>
 
