@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanah Lot Redesign - Mangadi's Portfolio</title>
+    <!-- Link ke CSS utama (untuk font, dll.) dan CSS khusus detail proyek -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../project-detail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="project-header">
+        <nav class="container">
+            <a href="../index.html" class="back-button">&larr; Kembali ke Beranda</a>
+            <a href="../index.html" class="logo">I Komang Adi Wirata</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="project-hero" class="project-hero-section">
+            <div class="container">
+                <h1>Website GYM Spot</h1>
+                <p class="project-tagline">Improve User Experience by easily finding gym recommendations, and helping promote gym owners</p>
+            </div>
+        </section>
+
+        <section id="project-overview" class="project-section">
+            <div class="container">
+                <div class="project-content-grid">
+                    <div class="project-description-block">
+                        <h2>My Role in This Project</h2>
+                        <p>The Gymspot management app project was designed to streamline gym operations, from member registration to trainer engagement, and help gym owners reach more customers. In this development, I played the following roles:</p>
+                        <ul>
+                            <li><strong>UI/UX Designer:</strong><p>Design an intuitive user flow and engaging interface, ensuring a smooth experience for both users and gym owners.</p></li>
+                            <li><strong>Frontend Developer:</strong><p>Translate visual designs into interactive and responsive web code, using expertise in Tailwind CSS for modern layouts and JavaScript for dynamic functionality.</p></li>
+                            <li><strong>Backend Developer:</strong><p>Building a robust server-side architecture using PHP and the Laravel framework, managing a MySQL database for member data, schedules, and transactions, and ensuring application security and scalability.</p></li>
+                        </ul>
+                        <p>The main focus of this project is to help users find fitness centers based on where the user lives, and then help fitness center owners promote their fitness centers so they can reach more consumers.</p>
+                        <div class="project-image-gallery">
+                        <img src="../images/website/gymspot/detail-konten.WebP" alt="Tanah Lot Desktop View" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Desktop+View';">
+                       
+                    </div>
+                    </div>
+                    <div class="project-image-gallery">
+                        <img src="../images/website/gymspot/home.WebP" alt="Tanah Lot Desktop View" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Desktop+View';">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies" class="project-section tech-section">
+            <div class="container">
+                <h2>Teknologi yang Digunakan</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP">
+                        <p>PHP</p>
+                    </div>
+                    <!-- <div class="tech-item">
+                        <img src="images/Laravel-icon2.png" alt="Laravel Logo" class="skill-icon">
+                        <p>Laravel</p>
+                    </div> -->
+                    <div class="tech-item">
+                        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS">
+                        <p>Tailwind CSS</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <!-- Tambahkan teknologi lain jika ada -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year-project"></span> Mangadi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year-project").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
