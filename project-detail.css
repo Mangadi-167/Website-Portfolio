@@ -1,0 +1,215 @@
+/* project-detail.css */
+
+/* --- Project Header (Mirip dengan Header utama tapi lebih sederhana) --- */
+.project-header {
+    background-color: var(--white-color);
+    color: var(--dark-gray);
+    padding: 0.8rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    position: sticky; /* Agar header tetap di atas saat scroll */
+    top: 0;
+    z-index: 999;
+}
+
+.project-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-header .back-button {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.project-header .back-button:hover {
+    color: var(--secondary-color);
+}
+
+/* --- Project Hero Section --- */
+.project-hero-section {
+    background-color: var(--primary-color); /* Warna latar belakang yang kuat */
+    color: var(--white-color);
+    padding: 80px 0 60px; /* Padding atas dan bawah */
+    text-align: center;
+    margin-top: 0; /* Pastikan tidak ada margin atas dari section sebelumnya */
+}
+
+.project-hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: var(--white-color);
+}
+
+.project-hero-section .project-tagline {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--light-gray);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- Project Content Sections --- */
+.project-section {
+    padding: 60px 0;
+    background-color: var(--white-color); /* Default background */
+}
+
+.project-section:nth-of-type(odd) { /* Untuk section ganjil (kecuali hero) */
+    background-color: var(--light-gray);
+}
+
+.project-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom */
+    gap: 40px;
+    align-items: flex-start; /* Konten rata atas */
+}
+
+.project-description-block h2 {
+    text-align: left; /* Kembalikan rata kiri untuk sub-judul */
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.project-description-block p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.project-image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.project-image-gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* --- Technologies Section --- */
+.tech-section h2 {
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px; /* Ukuran item teknologi */
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    object-fit: contain;
+}
+
+.tech-item p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+/* --- Responsive Adjustments for Project Detail Page --- */
+@media (max-width: 992px) {
+    .project-hero-section h1 {
+        font-size: 2.4rem;
+    }
+    .project-hero-section .project-tagline {
+        font-size: 1.1rem;
+    }
+
+    .project-content-grid {
+        grid-template-columns: 1fr; /* Satu kolom di layar menengah */
+    }
+
+    .project-description-block h2 {
+        text-align: center; /* Kembali ke tengah untuk judul di mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project-header .logo {
+        display: none; /* Sembunyikan logo di mobile jika hanya ada tombol kembali */
+    }
+
+    .project-hero-section {
+        padding: 60px 0 40px;
+    }
+    .project-hero-section h1 {
+        font-size: 2rem;
+    }
+    .project-hero-section .project-tagline {
+        font-size: 1rem;
+    }
+
+    .project-section {
+        padding: 40px 0;
+    }
+
+    .project-content-grid {
+        gap: 30px;
+    }
+
+    .tech-item {
+        width: 80px;
+    }
+    .tech-item img {
+        width: 50px;
+        height: 50px;
+    }
+    .tech-item p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .project-hero-section .project-tagline {
+        font-size: 0.9rem;
+    }
+    .project-description-block p {
+        font-size: 0.9rem;
+    }
+    .tech-grid {
+        gap: 20px;
+    }
+    .tech-item {
+        width: 70px;
+    }
+    .tech-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
