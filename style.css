@@ -138,7 +138,7 @@ header nav ul li a.active {
 /* --- New Hero Section Styles --- */
 .hero-section {
     /* Menggunakan gambar latar belakang dengan overlay gradien */
-    background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(32, 0, 53, 0.5)), url("images/hero-bg.jpg");
+    background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(32, 0, 53, 0.5)), url("images/hero-bg.WebP");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
